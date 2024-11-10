@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+         
+         <servlet>
+         	<servlet-name>insertCourseServlet</servlet-name>
+         	<servlet-class>com.course.insertCourseServlet</servlet-class>
+         </servlet>
+  		
+  		<servlet-mapping>
+  			<servlet-name>insertCourseServlet</servlet-name>
+  			<url-pattern>/insert</url-pattern>
+  		</servlet-mapping>
+  		
+  		<servlet>
+         	<servlet-name>updateCourseServlet</servlet-name>
+         	<servlet-class>com.course.updateCourseServlet</servlet-class>
+         </servlet>
+  		
+  		<servlet-mapping>
+  			<servlet-name>updateCourseServlet</servlet-name>
+  			<url-pattern>/courseUpdate</url-pattern>
+  		</servlet-mapping>
+  		
+  		<servlet>
+         	<servlet-name>deleteCourseServlet</servlet-name>
+         	<servlet-class>com.course.deleteCourseServlet</servlet-class>
+         </servlet>
+  		
+  		<servlet-mapping>
+  			<servlet-name>deleteCourseServlet</servlet-name>
+  			<url-pattern>/deleteCourse</url-pattern>
+  		</servlet-mapping>
+  		
+</web-app>     
